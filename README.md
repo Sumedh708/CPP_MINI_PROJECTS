@@ -19,7 +19,9 @@ Welcome to my repository! This is a curated collection of simple, lightweight te
    g++ main.cpp -o main
 3. **Run the executable: **
    Windows:
+    ```bash
       main.exe
    Linux:
-      ./main
+     ```bash
+      .\main
        
