@@ -17,13 +17,15 @@ Welcome to my repository! This is a curated collection of simple, lightweight te
 2. **Compile the code:** Open your terminal in the project folder and run:
    ```bash
    g++ main.cpp -o main
+   ```
 3. **Run the executable: **
    Windows:
    
     ```bash
       main.exe
+    ```
    Linux:
     
      ```bash
-      .\main
-       
+      ./main
+    ```   
