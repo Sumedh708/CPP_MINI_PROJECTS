@@ -34,7 +34,7 @@ std::string base64encode(std::string &in){
 void convert_img_to_txt(std::string& img){
     std::ifstream file(img,std::ios::binary);
     if(!file.is_open()){
-        std::cout << "Oh no!!Error in opening the image"<<std::endl;
+        std::cerr << "Oh no!!Error in opening the image"<<std::endl;
         return;
     }
 
@@ -48,7 +48,7 @@ void convert_img_to_txt(std::string& img){
     }
 
     outF << base64encode(rawBuff);  //string is encoded and written to file
-    cout << "image_encoded.txt file created successfully"
+    std::cout << "image_encoded.txt file created successfully"
     outF.close();
 }
 
