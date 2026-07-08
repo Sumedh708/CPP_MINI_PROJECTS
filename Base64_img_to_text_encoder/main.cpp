@@ -7,7 +7,7 @@
 each 6 bits are given corresponding ASCII values(0-63) and converted to a character(here defined in string chars)
 */
 std::string base64encode(std::string &in){
-    int str=0,i=-6; //str->acts like container where all characters from input string are stored. i-> stores number of available bits to group
+    int str=0,i=-6; //str->acts like container where all bits from input string are stored. i-> stores number of available bits to group
     std::string out;    // resultant encoded string
     const std::string chars =
         "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
