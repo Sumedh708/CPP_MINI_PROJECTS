@@ -5,7 +5,7 @@
 
 // Decodes a Base64-encoded string into its original binary data.
 std::string base64decode(const std::string &in){
-    int str=0,p=-8; //str->acts like container where all characters from input string are stored. p-> stores number of available bits to group
+    int str=0,p=-8; //str->acts like container where all bits from input string are stored. p-> stores number of available bits to group
     std::string out;    // resultant decoded string
     const std::string chars =
         "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
