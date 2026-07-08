@@ -13,6 +13,10 @@ Welcome to my repository! This is a curated collection of simple, lightweight te
 * **What it does:** Reads raw image files (`.png`, `.jpg`, etc.) byte-by-byte in binary mode and translates them into serialized, web-ready Base64 text streams.
 * **Key Concepts:** Low-level bitwise shifting (`<<`, `>>`), hexadecimal masking (`& 0x3F`), unformatted stream buffer management, and custom boundary data padding.
 
+### 3. Custom Base64 Image Decoder
+- **What it does:** Reads a Base64-encoded text file, decodes it back into its original binary format, and reconstructs the image.
+- **Key Concepts:** Base64 lookup tables, bitwise operations, binary file writing, stream iterators, and byte reconstruction from 6-bit groups.
+
 ---
 
 ##  How to Run
