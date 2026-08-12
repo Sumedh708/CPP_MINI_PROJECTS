@@ -20,13 +20,13 @@ Welcome to my repository! This is a curated collection of simple, lightweight te
 ### 4. Cross-Platform TCP Image Transfer
 - **What it does:** Transfers an image from a Linux client to a Windows server over a TCP connection. The client encodes the image into Base64, transmits it along with its size, and the server reconstructs the original image after receiving the complete data.
 - **Key Concepts:** TCP socket programming, POSIX sockets (Linux), Winsock2 (Windows), cross-platform communication, binary file handling, Base64 encoding/decoding, network byte order (htonl()/ntohl()), and reliable data reception using multiple recv() calls.
----
 
 ### 5. Cross-Platform Image Transfer
 * **What it does:** Transfers image data between systems using network sockets.
 
 ### 6. LRU Cache
 * **What it does:** Implements a Least Recently Used cache using a doubly linked list and `std::unordered_map`.
+---
 
 ##  How to Run
 
