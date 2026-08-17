@@ -66,6 +66,7 @@ class LRUCache{
             Node* new_node = new Node(key, value);
             new_node->next = dummy_tail;
             new_node->prev = mru;
+            mru->next = new_node;
             dummy_tail->prev = new_node;
             if(head == dummy_tail){
                 head = new_node;   
@@ -115,7 +116,7 @@ class LRUCache{
         }
 };
 int main(){
-    LRUCache cache(3);
+    LRUCache cache(1);
     std::cout << "################### LRU CACHE ###################" << std::endl;
     cache.add(1,100);
     cache.add(2,70);
