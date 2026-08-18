@@ -79,7 +79,7 @@ class LRUCache{
             
         
         void print(){
-            if(head == nullptr){
+            if(head == dummy_tail){
                 std::cout << "Nothing stored\n";
             }
             else{
